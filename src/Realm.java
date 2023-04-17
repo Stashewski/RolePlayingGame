@@ -105,13 +105,21 @@ public class Realm {
                 100,
                 20
         );
-        else return new Skeleton(
+        else if (random % 3 == 0) return new Skeleton(
                 "Скелет",
                 25,
                 20,
                 20,
                 100,
                 10
+        );
+        else return new Dragon(
+                "Дракон",
+                35,
+                25,
+                23,
+                100,
+                15
         );
     }
 
